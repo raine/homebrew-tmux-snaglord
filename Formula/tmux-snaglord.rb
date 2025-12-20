@@ -1,26 +1,26 @@
 class TmuxSnaglord < Formula
   desc "A TUI application to make copying terminal history from tmux easier"
   homepage "https://github.com/raine/tmux-snaglord"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/tmux-snaglord/releases/download/v0.1.1/aarch64-apple-darwin.tar.gz"
-      sha256 "64b8e0fd03bcbd7a9ac6d12001363ed77920a16cafafddc90ae71b0be70a988b"
+      url "https://github.com/raine/tmux-snaglord/releases/download/v0.1.2/aarch64-apple-darwin.tar.gz"
+      sha256 "840e0444375a7972c1dd3bb11551a72b1b271790c8c198ee30590af0d567345b"
     else
-      url "https://github.com/raine/tmux-snaglord/releases/download/v0.1.1/x86_64-apple-darwin.tar.gz"
-      sha256 "b1d8247b086cba486c9788dbc894b61b2e92e07d66864ce7fcb47a8029fa7793"
+      url "https://github.com/raine/tmux-snaglord/releases/download/v0.1.2/x86_64-apple-darwin.tar.gz"
+      sha256 "37e03932427b5f8f91a9acd8effd6ba05ae35433cb98d4cc72206ee72186a5d9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/tmux-snaglord/releases/download/v0.1.1/aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6535c0d9b9d6bb30ba164ab6830a66bb78b0ed605aaf2cbbfd6d801837c53a33"
+      url "https://github.com/raine/tmux-snaglord/releases/download/v0.1.2/aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1ce122274465cf69a7daf9c381ff67147c04fcb5d31f43d6ae73dc9824d88aa3"
     else
-      url "https://github.com/raine/tmux-snaglord/releases/download/v0.1.1/x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3d255123864473c9ac5c36b8e5e3b4b87afc8237c1cddbbd10caf0d31d5b066d"
+      url "https://github.com/raine/tmux-snaglord/releases/download/v0.1.2/x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a8e5383a5f0bb4f142cfaad622f68b134054d9b7aa363ae4d0252472b98dd60e"
     end
   end
 
